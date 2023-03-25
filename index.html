@@ -30,7 +30,9 @@
 </header>
 
 
-<body>	  
+<body>	
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="VNOoKIZ4"></script>  
 <section id="about" class="about-section">
   <div class="about-me-content">
     <div class="about-me-image">
@@ -52,19 +54,19 @@
 <h1>My Photos</h1>
 <div class="row">
   <div class="column">
-    <img src="1.jpeg" style="width:100%">
-    <img src="2.jpeg" style="width:100%">
-    <img src="4.jpeg" style="width:100%">
+    <img src="1.jpeg" style="width:100%" class="photo">
+    <img src="2.jpeg" style="width:100%" class="photo">
+    <img src="4.jpeg" style="width:100%" class="photo">
   </div>
   <div class="column">
-    <img src="8.jpeg" style="width:100%">
-    <img src="5.jpeg" style="width:100%">
-    <img src="6.jpeg" style="width:100%">
+    <img src="8.jpeg" style="width:100%" class="photo">
+    <img src="5.jpeg" style="width:100%" class="photo">
+    <img src="6.jpeg" style="width:100%" class="photo">
   </div>
   <div class="column">
-    <img src="7.jpeg" style="width:100%">
-    <img src="3.jpeg" style="width:100%">
-    <img src="9.jpeg" style="width:100%">
+    <img src="7.jpeg" style="width:100%" class="photo">
+    <img src="3.jpeg" style="width:100%" class="photo">
+    <img src="9.jpeg" style="width:100%" class="photo">
   </div>
 </div>
 
@@ -73,82 +75,68 @@
 <section id="playlist">
 <div class="video-wrapper"></div>
   <h1>My Playlist</h1>
-  <iframe class="video-box" width="560" height="315" src="https://www.youtube.com/embed/S5se6N7ibB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="video-box" width="420" height="315" src="https://www.youtube.com/embed/S5se6N7ibB8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </section>
 
 <section id="like" class="section">
-<h1>give me a like</h1>
-
+<h1>Give Me A Like</h1>
+<div class="fb-like" data-href="https://web-development-environments-2023.github.io/207224551/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+<h1>Scan My Code</h1>
+<img src="qr.PNG">
 </section>
 
 <section id="spa" class="section">
+<h1>Question 1</h1>
+<p> The diffrences between web1 , web2 and web3 are: </p>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+<h1>Question 2</h1>
+<p> Use Case: </p>
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+
+<h1>Contact Me</h1>
+
+<form action="submit-form.php" method="post">
+  <div>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required style="width: 100%;">
+  </div>
+
+  <div>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="6" required style="width: 100%;"></textarea>
+  </div>
+
+  <button type="button" id="add-emoji-btn">Add Emoji</button>
+
+  <button type="submit">Submit</button>
+</form>
+
+<style>
+  div {
+    margin-bottom: 10px;
+  }
+
+  #message {
+    height: 150px;
+  }
+</style>
+
+<script>
+  const addEmojiBtn = document.getElementById('add-emoji-btn');
+  const messageInput = document.getElementById('message');
+
+  addEmojiBtn.addEventListener('click', function() {
+    const emoji = '😀'; // Replace with your desired emoji
+    messageInput.value += emoji;
+  });
+</script>
+
 </section>
 
 
