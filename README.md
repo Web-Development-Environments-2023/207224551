@@ -14,4 +14,4 @@ The website contains a navigation bar with these options:
                 the user needs to press "send", and an email will be sent to my email address. 
                 
 My ID: 207224551  
-Website Address: https://web-development-environments-2023.github.io/207224551/#contact 
+Website Address: https://web-development-environments-2023.github.io/207224551
