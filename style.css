@@ -1,7 +1,159 @@
-#menu
-{
+header {
 	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+	display: flex;
+	align-items: center;
+	font-family: 'Sora', cursive;
+  }
+  
+
+  
+  nav {
+	display: flex;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  
+  nav li {
+	margin: 0 10px;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: #333333;
+	padding: 10px;
+  }
+  
+  nav a:hover {
+	color: #ffffff;
+	background-color: #333333;
+  }
+  
+  /* This is to make the navigation bar sticky on scroll */
+  header.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  #about{
+	padding: 50px;
+	box-sizing: border-box;
+	background-color: rgba(199, 224, 215, 0.5);
+  }
+
+  
+  .about-me-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch; 
+  }
+  
+  .about-me-text {
+	flex: 1;
+	margin-top: 50px;
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: 1px;
+  }
+  
+  .about-me-image {
+	flex: 1;
+	margin-right: 10px;
+  }
+  
+  .about-me-image img {
+	max-width: 100%;
+	height: 70%;
+  }
+
+  #photos {
+	margin-top: -320px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+	background-color: rgba(144, 187, 171, 0.5);
+
+}
+
+.row {
+	display: flex;
+  }
+  
+  .column {
+	flex: 33.33%;
+	padding: 5px;
+  }
+
+
+#playlist 
+{
+	background-color: rgba(199, 224, 215, 0.5);
+	padding-top: 50px;
+	padding-bottom: 70px;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+
+}
+.video-box {
+	display: block;
+	background-color: #7ba48f;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin: 20px auto;
+	padding: 100px;
+	box-sizing: border-box;
+	width: 700px;
+	height: 400px;
+}
+
+
+#like 
+{
+	font-family: 'Bad Script', cursive;
+	background-color: rgba(199, 224, 215, 0.5);
+	text-align: center;
+
+}
+
+#qrcoder 
+{
+	text-align: center;
+
+}
+
+#spa 
+{
+	text-align: center;
+
+}
+
+#contact 
+{
+	text-align: center;
+
 }

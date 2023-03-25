@@ -2,108 +2,84 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=El Messiri' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
 </head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+
+<header>
+  <div class="logo">
+    FLORENCE DARMON
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#about">ABOUT ME</a></li>
+      <li><a href="#photos">PHOTOS</a></li>
+      <li><a href="#playlist">PLAYLIST</a></li>
+      <li><a href="#like">LIKE</a></li>
+      <li><a href="#qrcoder">QR CODE</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">CONTACT ME</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<body>	  
+<section id="about" class="about-section">
+  <div class="about-me-content">
+    <div class="about-me-image">
+      <img src="lanca.jpeg" alt="About Me Image", class="small-image">
+    </div>
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p> My name is Florence Darmon.</p>
+      <p> I'm 81 years old.</p>
+      <p> Born in Kahir, Egypt.</p>
+      <p> I moved to Israel in 1956 and married Max Kiki Darmon.</p>
+      <p> I worked as a laboratorian.</p>
+      <p> I have 3 dauthers, 3 grandchildren and 7 great-grandchildren.</p>
+    </div>
+  </div>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+<h1>My Photos</h1>
+<div class="row">
+  <div class="column">
+    <img src="1.jpeg" style="width:100%">
+    <img src="2.jpeg" style="width:100%">
+    <img src="4.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="8.jpeg" style="width:100%">
+    <img src="5.jpeg" style="width:100%">
+    <img src="6.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="7.jpeg" style="width:100%">
+    <img src="3.jpeg" style="width:100%">
+    <img src="9.jpeg" style="width:100%">
+  </div>
+</div>
+
 </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+<section id="playlist">
+<div class="video-wrapper"></div>
+  <h1>My Playlist</h1>
+  <iframe class="video-box" width="560" height="315" src="https://www.youtube.com/embed/S5se6N7ibB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+<h1>give me a like</h1>
+
 </section>
 
 <section id="qrcoder" class="section">
@@ -189,5 +165,6 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
 </body>
 </html>
