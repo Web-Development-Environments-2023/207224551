@@ -10,6 +10,8 @@
 <link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=El Messiri' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.4.min.js"></script>
 </head>
 
 <header>
@@ -92,67 +94,164 @@
 <section id="spa" class="section">
   <div class="paragraph">
     <h1>Question 1</h1>
-    <p> The main diffrence between web1 , web2 and web3 is that web 1.0 is consider as read-only web targets on
-      content creativity of producer, web 2.0 targets on content creativity of users and producers while web 3.0 targets on
-      linked data sets.  </p>
-    <p>In web 1.0 there is Pushed web, text/graphics based flash, in web 2.0 there is Two ways web pages, wikis,
-      videos, pod casts, shading, Personal publishing, 2D poratals. In web 3.0 there is 3D portals, avtar representation,
-      Interoperable profits, Multi-user virtual environment (MUVEs), Integrated games, education and business, all media flows in and
-      out of virtual web worlds. </p>
-    <p> another diffrence deals with search engines: In Web 1.0 search engines retrieve macro contents.
-      Search is very fast but many times results are inaccurate. 
+    <p>Diffrences between web 1.0 , web 2.0 and web 3.0: </p>
+    <p>Interaction and User Participation: Web 1.0 is a static and read-only web where users could only consume the content provided by the website,
+      web 2.0 is read-write web, it encourages user participation and interaction.and web 3.0 intends to be read-write Intelligent web and targets on 
+      linked data sets.</p>
+    <p>Personalization and Contextualization: Web 3.0 is a more personalized and context-aware web, 
+      where content is tailored to the user's specific needs and preferences. 
+      This is achieved through the use of technologies such as 
+      artificial intelligence, machine learning, and the Semantic Web.</p>
+    <p>Search Engines: In Web 1.0 search engines retrieve macro contents.
+      The Search is very fast but many times results are inaccurate. 
       In Web 2.0 search engines retrieve tags with micro contents. Web 2.0 tags everything: pictures, links, events,
       news, Blogs, audio, video, and so on.
-      In Web 3.0 search engines will hopefully retrieve micro content texts which were tagged automatically. The result could be
-      more precise search. </p>
+      In the Web 3.0 era, search engines are becoming even more intelligent and personalized. 
+      The Semantic Web and linked data technologies are enabling search engines to understand
+      the context of a search query, as well as the relationships between different data sets and sources.
+      The result is more precise search. </p>
   </div>
   <div class="paragraph">
     <h1>Question 2</h1>
-    <p> Use Case: </p>
+    <p> Use Case for Difference 1:
+        In web 1.0 the user visits a static website. 
+        They can only consume the content and cannot interact with the website or provide feedback.
+        In web 2.0 the user visits a social media platform like Facebook or Twitter. 
+        They can not only consume content, but they can also interact with other users and 
+        participate in online discussions. 
+        They can share content, comment on posts, and provide feedback in real-time.
+        In web 3.0 A user visits a virtual reality platform like Second Life or Decentraland. 
+        They can not only consume content, but they can also interact with a fully immersive 3D environment 
+        and participate in online communities. 
+        They can create their own avatars, build their own virtual spaces, 
+        and interact with other users in real-time. </p> 
+      <p>Use Case for difference 2:
+        A user want to buy a product from an online store. 
+        In web 1.0 the user visits the online store that provides a list of products for sale.
+        The website does not provide any personalized recommendations or contextual information.
+        The user has to manually sort through the list to find the book they want to buy.
+        In web 2.0 the website provides personalized recommendations based on 
+        the user's browsing and purchase history. 
+        The website uses cookies and browsing data to personalize the user's experience and 
+        provide relevant recommendations. 
+        The user can also see contextual information such as reviews, ratings, and related products, 
+        which help them make an informed decision.
+        In web 3.0 the website uses AI and machine learning to provide a personalized and
+        context-aware shopping experience. 
+        The website uses data from multiple sources such as the user's browsing history, 
+        social media activity, and even their location and weather conditions to provide
+        tailored recommendations. 
+        The user can also see contextual information such as 
+        price comparisons, availability, and delivery options based on their location.</p>
+      <p>Use Case for difference 3:
+        A user searches a specific topic-
+        In web 1.0 The search engine returns a list of websites that match the user's query, 
+        ranked based on keyword density and other basic criteria.
+        In web 2.0 the search engine uses complex algorithms and data analysis to provide 
+        more relevant and personalized search results. 
+        It takes into account the user's search history, location, and other factors to provide 
+        more targeted and useful results.
+        In web 3.0 the search engines use AI and machine learning to provide 
+        even more sophisticated and context-aware search results. 
+        They can understand natural language queries and provide more accurate and 
+        personalized results based on the user's preferences and search history.
+      </p>
   </div>
 </section>
 
 <section id="contact" class="section">
-
-<h1>Contact Me</h1>
-
-
-
-<form action="send-email.php" method="post">
-  <div>
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required style="width: 100%;">
-  </div>
-
-  <div>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="6" required style="width: 100%;"></textarea>
-  </div>
-
-  <button type="button" id="add-emoji-btn">Add Emoji</button>
-
-  <button type="submit">Submit</button>
-</form>
-
-<style>
-  div {
-    margin-bottom: 10px;
+  <h1>Contact Me</h1>
+  <style>
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: none;
+    }
+    
+    input[type="submit"] {
+        background-color: rgba(199, 224, 215, 0.5);
+        color: rgb(2, 2, 2);
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    textarea {
+        height: 150px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    </style>
+    
+    <form onsubmit="sendEmail(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+      <br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+      <div>
+          <button type="button" onclick="addEmoji('😀')">😀</button>
+          <button type="button" onclick="addEmoji('😂')">😂</button>
+          <button type="button" onclick="addEmoji('😍')">😍</button>
+      </div>
+      <br>
+      <input type="submit" value="Send">
+  </form>
+  
+  <style>
+      button {
+          display: inline-block;
+      }
+  </style>
+  
+  <script>
+  function sendEmail(event) {
+      event.preventDefault();
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+      var mailToLink = "mailto:razmoy@post.bgu.ac.il?subject=" + encodeURIComponent(document.getElementById("subject").value) + "&body=" + encodeURIComponent("Name: " + name + "\r\n\r\n" + message).replace(/%0A/g, "\r\n");
+      window.location.href = mailToLink;
+      document.getElementById("name").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
   }
-
-  #message {
-    height: 150px;
+  
+  function addEmoji(emoji) {
+      var messageInput = document.getElementById("message");
+      var startPos = messageInput.selectionStart;
+      var endPos = messageInput.selectionEnd;
+      var messageText = messageInput.value;
+      messageInput.value = messageText.substring(0, startPos) + emoji + messageText.substring(endPos, messageText.length);
+      messageInput.setSelectionRange(startPos + 1, startPos + 1);
   }
-</style>
-
-<script>
-  const addEmojiBtn = document.getElementById('add-emoji-btn');
-  const messageInput = document.getElementById('message');
-
-  addEmojiBtn.addEventListener('click', function() {
-    const emoji = '😀'; // Replace with your desired emoji
-    messageInput.value += emoji;
-  });
-</script>
+  </script>
 
 </section>
 

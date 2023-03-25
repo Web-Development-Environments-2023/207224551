@@ -1,13 +1,28 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $to = "razmoy@post.bgu.ac.il";
-  $subject = "Message from website";
-  $message = $_POST["message"];
-  $headers = "From: " . $_POST["email"];
+// Get the form data
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 
-  $mailtoUrl = "mailto:" . $to . "?subject=" . urlencode($subject) . "&body=" . urlencode($message);
+// Set the recipient email address
+$to = 'razmoy@post.bgu.ac.il';
 
-  header("Location: " . $mailtoUrl);
-  exit();
+// Set the email headers
+$headers = "From: $name <$email>" . "\r\n";
+$headers .= "Reply-To: $email" . "\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8" . "\r\n";
+
+// Encode the subject and message for proper email delivery
+$subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
+$message = "=?UTF-8?B?" . base64_encode($message) . "?=";
+
+// Send the email
+if (mail($to, $subject, $message, $headers)) {
+  // Return a success message
+  echo 'Email sent!';
+} else {
+  // Return an error message
+  echo 'An error occurred while sending the email.';
 }
 ?>
