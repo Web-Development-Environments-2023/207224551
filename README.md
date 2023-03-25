@@ -13,5 +13,5 @@ The website contains a navigation bar with these options:
                 after pressing "submit" the default email service opens in the user's computer, with the information that was filled in the form. 
                 the user needs to press "send", and an email will be sent to my email address. 
                 
-My ID: 207224551
+My ID: 207224551\n
 Website Address: https://web-development-environments-2023.github.io/207224551/#contact 
