@@ -157,6 +157,12 @@ header {
 	text-align: center;
 
 }
+.paragraph {
+    display: inline-block;
+    width: 45%; /* set the width of each paragraph to fit side by side */
+    margin-right: 5%; /* add a little margin between paragraphs */
+    vertical-align: top; /* align the tops of the paragraphs */
+}
 
 #contact 
 {
